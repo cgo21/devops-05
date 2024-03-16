@@ -25,5 +25,8 @@ jobs:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
        SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }} #OPTIONAL
     - name: Quality Check passed, PR acceped
+      uses: hmarr/auto-approve-action@v2.0.0 
       if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED' 
-      run: echo passed
+      with:
+       github-token: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
+      
