@@ -24,3 +24,6 @@ jobs:
       env:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
        SONAR_HOST_URL: ${{ vars.SONAR_HOST_URL }} #OPTIONAL
+    
+    - name: Quality Check passed, PR acceped
+      if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED'  
