@@ -45,8 +45,8 @@ jobs:
       uses: atlassian/gajira-create@v3
       if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED' 
       with:
-        project: devops-05
-        issuetype: Task
+        project: JZ05
+        issuetype: Build
         description: Created automatically via GitHub Actions
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
