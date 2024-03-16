@@ -42,7 +42,7 @@ jobs:
 
     # Create New Jira Task
     - name: Create Jira Task
-      uses: atlassian/gajira-todo@v3
+      uses: atlassian/gajira-create@v3
       if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED' 
       with:
         project: devops-05
