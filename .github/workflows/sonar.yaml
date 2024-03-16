@@ -51,9 +51,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # Scan with Snyc
+    # Initialise Snyc
     - name: Snyk scan
       uses: snyk/actions/setup@master
+
+    # Scan with Snyc
       if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED'
       run: snyk test
       env:
