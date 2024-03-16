@@ -29,4 +29,15 @@ jobs:
       if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED' 
       with:
        github-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Jira Task
+      uses: atlassian/gajira-todo@v3
+      if: ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }} == 'PASSED' 
+      with:
+        project: devops-05
+        issuetype: Task
+        description: Created automatically via GitHub Actions
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+       
       
