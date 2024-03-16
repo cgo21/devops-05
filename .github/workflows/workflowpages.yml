@@ -25,3 +25,16 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.     
 
+      # Send Mail+
+      - name: Send email
+        uses: devellany/send-mailer@v1.0.2
+        with:
+          host: smtp.gmail.com
+          port: 465
+          account: ${{secrets.ACCOUNT}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          from: ${{secrets.ACCOUNT}}
+          to: ${{secrets.ACCOUNT}}
+          subject: Grupo 05
+          body: Mensaje automatico al desplegar
+
