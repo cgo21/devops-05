@@ -12,7 +12,7 @@ Primero, crea una rama develop desde la rama principal (main). ¡Que la Fuerza t
 
 ## Paso 2: Enfrenta la prueba de la PR
 
-Crea una Pull Request desde develop a main y prepárate para el combate. ¡Es hora de demostrar tu valía!
+Crea una Pull Request desde develop a main y prepárate para el combate. ¡Es hora de demostrar tu valía! 
 
 ## Paso 3: Confronta los Quality Gates de Sonar y la seguridad de Snyk
 
