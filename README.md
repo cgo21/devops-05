@@ -51,7 +51,7 @@ Crea una Pull Request desde develop a main y prepárate para el combate. ¡Es ho
 
 ## Paso 5: Desata el poder del merge y cierra la tarea enviando un email de despliegue correcto.
 
-Cuando la PR sea fusionada manualmente, desencadena el flujo que llevará tu aplicación a nuevas alturas. Que el código fluya como la Fuerza misma. 
+Cuando la PR sea fusionada manualmente, desencadena el flujo que llevará tu aplicación a nuevas alturas. Que el código fluya como la Fuerza misma.  
 
 Se deberá finalizar enviando un correo que se facilitará en el challenge y asi podemos ver que es el primer equipo en finalizar. 
 
