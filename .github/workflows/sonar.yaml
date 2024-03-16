@@ -47,7 +47,7 @@ jobs:
       with:
         project: JZ05
         issuetype: Build
-        description: Created automatically via GitHub Actions
+        summary: Summary for devops 05 jira task
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
